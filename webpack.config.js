@@ -10,11 +10,11 @@ module.exports = function (env) {
     output: {
       path: path.resolve(__dirname, "storage"),
       filename: "[name].[contentHash].bundle.js",
-      publicPath: "/",
+      publicPath: "./",
     },
     devServer: {
       contentBase: path.resolve(__dirname, "storage"),
-      publicPath: "/",
+      publicPath: "./",
     },
     module: {
       rules: [
